@@ -30,20 +30,31 @@
     <div id="divTryItFree"><b>Try it free 7 days</b> then $20/mo. thereafter</div>
 
     <!--Div Campos de Cadastro-->
-    <div id="camposCadastro">
-      <input class="campoPreenchimento" type="text" placeholder="First Name">
-      <input class="campoPreenchimento" type="text" placeholder="Last Name">
-      <input class="campoPreenchimento" type="email" placeholder="Email Address">
-      <input class="campoPreenchimento" type="password" placeholder="Password">
-      <input id="botaoEnviar" type="submit" value="Claim your free trial">
+    <form id="camposCadastro">
+      <input class="campoPreenchimento" type="text" placeholder="First Name" id="nome" required>
+      <div id="naoPreenchimentoFirstName" class="classeNaoPreenchimento">First Name cannot be empty!</div>
+      
+      <input class="campoPreenchimento" type="text" placeholder="Last Name" id="sobrenome" required>
+      <div id="naoPreenchimentoLastName" class="classeNaoPreenchimento">Last Name cannot be empty!</div>
+      
+      <input class="campoPreenchimento" type="email" placeholder="Email Address" id="email" required>
+      <div id="naoPreenchimentoEmail" class="classeNaoPreenchimento">E-mail cannot be empty!</div>
+      
+      <input class="campoPreenchimento" type="password" placeholder="Password" id="senha" required>
+      <div id="naoPreenchimentoSenha" class="classeNaoPreenchimento">Password cannot be empty</div>
+      
+      <input id="botaoEnviar" type="submit" value="Claim your free trial" onclick="verificar()">
       <p id="textinhoPequeno">By clicking the button, you are agreeing to our <span>Terms and Services</span>.</p>
-    </div>
+      
+    </form>
 
     <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="http://www.github.com/dinottom8">Mateus Dinotto</a>.
     </p>
   </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
