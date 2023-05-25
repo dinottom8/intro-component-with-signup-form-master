@@ -184,6 +184,8 @@ footer {
         left: 0;
         width: 270px;
         display: flex;
+        justify-content: center;
+        align-items: center;
         margin-top: 10px;
     }
 }
