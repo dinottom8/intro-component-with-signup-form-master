@@ -135,3 +135,55 @@ footer {
     position: relative;
     left: 13em;
 }
+
+@media screen and (max-width: 720px) {
+    body {
+        flex-direction: column;
+        overflow: scroll;
+        height: fit-content;
+        padding-top: 100px;
+    }
+
+    #divCadastro {
+        width: 300px;
+    }
+
+    #divLearnToCode {
+        width: 300px;
+    }
+
+    #camposCadastro {
+        width: 300px;
+    }
+    
+    .campoPreenchimento {
+        width: 220px;
+    }
+    
+    #botaoEnviar {
+        width: 250px;
+    }
+    
+    h1 {
+        width: 300px;
+        font-size: 2em;
+    }
+    
+    p {
+        width: 300px;
+        margin-bottom: 2em;
+    }
+
+    .classeNaoPreenchimento {
+        left: 0;
+    }
+    
+    footer {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 270px;
+        display: flex;
+        margin-top: 10px;
+    }
+}
